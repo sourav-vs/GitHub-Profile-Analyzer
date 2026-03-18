@@ -12,18 +12,20 @@
               <!-- navbar -->
         <nav class="navbar navbar-expand-lg w-100">
             <div class="container d-flex align-items-center justify-content-between">
-
-                <!-- Left-Card -->
                 <a class="navbar-brand d-flex align-items-center text-light" href="#">
                     <img src="./images/ChatGPT_Image_Mar_17__2026__03_21_01_PM-removebg-preview.png" width="80"
                         height="55">
                     GitLens
                 </a>
-
-                
-
             </div>
         </nav>
+       <!-- SEARCH-CARD -->
+                <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+                    <div class="d-flex gap-2 align-items-center justify-content-center flex-column " style="min-height: 100vh;width: 100%; max-width: 500px;">
+                        <input type="text" class="form-control rounded-pill" placeholder="Search user..." id="inputCity" >
+                        <button onclick="Search()" class="btn btn-success rounded-pill">Search</button>
+                    </div>
+                </div>
     </div>
 </body>
 <script src="./script.js"></script>
