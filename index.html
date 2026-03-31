@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
     <div>
-              <!-- navbar -->
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg w-100">
             <div class="container d-flex align-items-center justify-content-between">
                 <a class="navbar-brand d-flex align-items-center text-light" href="#">
@@ -19,14 +22,40 @@
                 </a>
             </div>
         </nav>
-       <!-- SEARCH-CARD -->
-                <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
-                    <div class="d-flex gap-2 align-items-center justify-content-center flex-column " style="min-height: 100vh;width: 100%; max-width: 500px;">
-                        <input type="text" class="form-control rounded-pill" placeholder="Search user..." id="inputCity" >
-                        <button onclick="Search()" class="btn btn-success rounded-pill">Search</button>
-                    </div>
+        <!-- SEARCH-CARD -->
+        <div class="d-flex align-items-center justify-content-center flex-column" style="min-height: 30vh;">
+            <div class="d-flex gap-2 align-items-center justify-content-center flex-column "
+                style="width: 100%; max-width: 500px;">
+                <input type="text" class="form-control rounded-pill mt-5" placeholder="Search user..." id="inputCity">
+                <button onclick="Search()" class="btn btn-success rounded-pill mb-5 mt-2">Search</button>
+            </div>
+           
+          
+        </div>
+         <div class="row gap-2 justify-content-center">
+                <div class="col-md-3" style=" padding-top: 30px; height: 250px; text-align: center; border-radius: 20px; background-size: contain; background-image: url('https://cdn.dribbble.com/userupload/43843094/file/original-e6f2cf3250a1c55c3eb57d2b520274e0.png?resize=400x0')">
+                    <h3 style="color: white;">Commits</h3>
+                    <h5 style="color: white;">Total Commits:1.2K</h5>
+                    <h5 style="color: white;">Active contributions:500</h5>
+                    <h5 style="color: white;">Overroll:🔥 High activity</h5>
                 </div>
+                 <div class="col-md-3" style=" padding-top: 30px; height: 250px; text-align: center; border-radius: 20px; background-size: contain; background-image: url('https://global.discourse-cdn.com/streamlit/original/3X/5/3/538713f103d1570de2e76829a7225e3743c3878a.png')">
+                    <h3 style="color: white;">Commits</h3>
+                    <h5 style="color: white;">Total Commits:1.2K</h5>
+                    <h5 style="color: white;">Active contributions:500</h5>
+                    <h5 style="color: white;">Overroll:🔥 High activity</h5>
+                </div>
+                <div class="col-md-3 border border-light"></div>
+
+            </div>
+          
+
+        <!-- to show results -->
+        <div id="output">
+
+        </div>
     </div>
 </body>
 <script src="./script.js"></script>
+
 </html>
